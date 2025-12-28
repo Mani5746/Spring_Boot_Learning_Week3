@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: jpatuts
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useSSL=false
+    username: root
+    password: Manish@5746370
+
+  sql:
+    init:
+      mode: "always"
+      data-locations: classpath:data.sql
